@@ -26,6 +26,7 @@ The system transitions from traditional static scripts to an **Agentic Workflow*
 * **Adaptive Strategies:** Includes `Gentle` (Inpainting), `Moderate` (Gaussian Noise), `Maximum` (Black-box), and `Skull Strip` (Aggressive base removal).
 * **Tissue Preservation:** Dynamic bounding box adjustment (`shrink_factor`) to balance privacy with data utility.
 * **Batch Processing:** Automated pipeline for high-throughput medical datasets with ZIP export capabilities.
+* **Current Scope:** The system is currently optimized for the **Sagittal plane**.
 
 ---
 
@@ -54,6 +55,7 @@ To further improve precision, the next phase focuses on **Brain Segmentation Int
 * **Intersection Logic:** By training a secondary model (e.g., U-Net) for **Brain Tissue Segmentation**, we can implement an "Intersection-Over-Avoidance" logic.
 * **Zero-Damage Guarantee:** This allows the system to apply maximum-security masking to the face while mathematically ensuring that not a single pixel of the segmented brain tissue is altered.
 * **3D Support:** Expanding the agentic workflow to handle 3D NIfTI volumes directly.
+* **Scalability:** The modular logic is designed to be extensible; the detection and masking modules can be further trained and adjusted to support **Axial** and **Coronal** planes for full 3D consistency.
 
 ---
 
